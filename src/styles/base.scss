@@ -1,0 +1,225 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #252831;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  max-width: 657px;
+  background: #2a2f40;
+
+  &__pic {
+    display: flex;
+    align-items: center;
+    // position: relative;
+    min-width: 50%;
+    background: #ff6d39;
+    border-top-right-radius: 45%;
+    border-bottom-right-radius: 45%;
+    margin-right: 25px;
+  }
+
+  &__desc {
+    padding: 0 10px;
+  }
+}
+
+.card-slider-wrapper {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  // background-color: #fdc60f;
+}
+
+.card-slider {
+  width: 125%;
+  position: absolute;
+  top: 0px;
+  left: -47px;
+
+  &__item {
+  }
+
+  &__arrows {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 70px;
+    left: 90px;
+    bottom: -50px;
+    // background-color: #fdc60f;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 94px;
+
+  &__logo {
+    color: #ff6d39;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    color: #fff;
+    font-size: 12px;
+    margin-right: 30px;
+    transition: transform 0.2s;
+  }
+
+  &__item:hover {
+    transform: scale(1.2);
+  }
+}
+
+h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.price {
+  position: relative;
+  color: #fff;
+  font-weight: normal;
+  line-height: 120%;
+  margin-bottom: 27px;
+  &__now {
+    font-size: 20px;
+    margin-right: 39px;
+  }
+  &__before {
+    font-size: 16px;
+  }
+}
+
+.price::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: red;
+  height: 1px;
+  width: 40px;
+  top: 10px;
+  left: 92px;
+}
+
+.sizes-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  &__title {
+    font-size: 12px;
+    color: #fff;
+    margin-right: 36px;
+    text-transform: uppercase;
+  }
+}
+.sizes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__item {
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    font-size: 12px;
+    color: #fff;
+    margin-right: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  &__item:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* __item надо добавить активность можификатор */
+
+.colors-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 30px;
+  &__title {
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 45px;
+  }
+}
+
+.colors {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.color {
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border-color: #fff;
+  margin-right: 36px;
+  &--yellow {
+    background: #fdc60f;
+  }
+  &--black {
+    background: #020203;
+  }
+  &--blue {
+    background: #05a0ca;
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 43px;
+}
+
+.btn--buy i {
+  margin-right: 15px;
+}
+.btn--add-to-card i {
+  margin-right: 15px;
+}
